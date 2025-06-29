@@ -11,7 +11,8 @@ void result(char comp, char play, int &sco);  // Passing a score reference.
 int main() {
     srand(time(0));  // Seeding For Variation
     int score = 0;
-    char playAgain = 'y';
+    char playAgain = 'y'; 
+    std::cout << "*****************************\n";
     std::cout << "ROCK PAPER SCISSORS MINUS ONE\n";
     std::cout << "*****************************\n";
     // Loop until exit method
@@ -61,6 +62,8 @@ int main() {
         result(compch, choice, score);
         std::cout << "\nYour Score :: " << score << "\n";
 
+        // Loop exit prompt
+        
         std::cout << "\nPlay again? (any key = yes, q = quit) :: ";
         std::cin >> playAgain;
     }
@@ -68,6 +71,7 @@ int main() {
     std::cout << "            RESULT           \n";
     std::cout << "*****************************\n";
     std::cout << "\nFinal Score :: " << score << "\nThanks for playing!\n";
+    std::cout << "*****************************\n";
     return 0;
 }
 

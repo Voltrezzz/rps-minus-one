@@ -47,7 +47,7 @@ int main() {
         else if (num == 2)
             choice = choice2;
         else {
-            std::cerr << "ERROR : Invalid choice.\nChoose 1 or 2.";
+            std::cerr << "ERROR : Invalid choice.\nChoose 1 or 2."; // Using cerr from STL since it has no buffer
             continue;
         }
 
@@ -106,7 +106,7 @@ void result(char comp, char play, int &sco) {
             break;
 
         default:
-            std::cerr << "ERROR : Runtime error."; // Using cerr from STL since it has no buffer
+            std::cerr << "ERROR : Runtime error."; 
             break;
     }
 }
